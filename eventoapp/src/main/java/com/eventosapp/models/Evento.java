@@ -1,4 +1,4 @@
-package com.eventoapp.models;
+package com.eventosapp.models;
 
 import java.io.Serializable;
 
@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Evento implements Serializable{
+public class Evento implements Serializable{ 
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -20,6 +20,7 @@ public class Evento implements Serializable{
 	private String local;
 	private String data;
 	private String horario;
+
 	
 	public long getCodigo() {
 		return codigo;
