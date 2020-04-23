@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "Evento")
@@ -20,9 +21,16 @@ public class Evento implements Serializable{
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private long codigo;
 	
+	@NotEmpty
 	private String nome;
+	
+	@NotEmpty
 	private String local;
+	
+	@NotEmpty
 	private String data;
+	
+	@NotEmpty
 	private String horario;
 
 	@OneToMany
